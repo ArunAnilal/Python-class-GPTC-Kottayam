@@ -8,11 +8,13 @@ def index():
 
 @app.route("/home")
 def home():
-    return "welcome to my home page"
+    return render_template("home.html")
+
 
 @app.route("/contact")
 def home():
-    return "welcome to your contact"
+    return render_template("contact.html")
+
 
 if(__name__=="__main__"):
     app.run(debug=True)
